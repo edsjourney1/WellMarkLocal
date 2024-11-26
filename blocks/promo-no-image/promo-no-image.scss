@@ -1,0 +1,365 @@
+@import "../../styles/include/mq.scss";
+@import "../../styles/include/tokens.scss";
+.promo-no-image-container {
+  .promo-no-image-wrapper {
+    @include for-mobile {
+      // background-image: none !important;
+      padding: 0 16px;
+    }
+    @include for-tablet {
+      // background-image: none !important;
+      padding: 0 36px;
+    }
+    @include for-xlarge {
+      padding: 0 52px;
+    }
+    @include for-large {
+      padding: 0 52px;
+    }
+    @include for-laptop {
+      padding: 0 36px;
+    }
+  }
+  .promo-no-image-heading {
+    text-align: center;
+    color: $--blue-550;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    margin: 0;
+    font-family: $--font-museo;
+    font-style: 700;
+    opacity: 1;
+    @include for-mobile {
+      padding-top: 72px;
+      font-size: 28px;
+      line-height: 34px;
+      width: 100%;
+    }
+    @include for-tablet {
+      padding-top: 96px;
+      font-size: 28px;
+      line-height: 34px;
+      width: 100%;
+    }
+    @include for-xlarge {
+      padding-top: 120px;
+      width: 50%;
+      margin: 0 auto;
+    }
+    @include for-large {
+      padding-top: 120px;
+      width: 50%;
+      margin: 0 auto;
+    }
+    @include for-laptop {
+      padding-top: 120px;
+      width: 66.66%;
+      margin: 0 auto;
+    }
+  }
+
+  .promo-no-image {
+    @include for-mobile {
+      padding: 52px 0px 72px 0px;
+    }
+    @include for-xlarge {
+      padding: 72px 0px 120px 0px;
+    }
+    @include for-large {
+      padding: 72px 0px 120px 0px;
+    }
+    @include for-laptop {
+      padding: 72px 0px 120px 0px;
+      gap: 30px;
+    }
+    @include for-tablet {
+      padding: 52px 0px 96px 0px;
+    }
+    > .promo-no-image-4-column {
+      list-style: none;
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      text-align: center;
+      flex-direction: row;
+      margin: 0;
+      @include for-mobile {
+        flex-direction: column;
+        padding: 0;
+        gap: 52px;
+      }
+      @include for-xlarge {
+        gap: 30px;
+        padding: 0;
+      }
+      @include for-large {
+        gap: 30px;
+        padding: 0;
+      }
+      @include for-laptop {
+        gap: 30px;
+        padding: 0;
+      }
+      @include for-tablet {
+        padding: 0;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+      > li {
+        background-color: var(--background-color);
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        &:first-child {
+          padding-bottom: 22px;
+        }
+        &:nth-child(2) {
+          padding-bottom: 22px;
+        }
+        @include for-xlarge {
+          width: 25%;
+          padding: 0 24px;
+        }
+        @include for-large {
+          width: 25%;
+          padding: 0 24px;
+        }
+        @include for-laptop {
+          width: calc((100% - 72px) / 4);
+          padding: 0 24px;
+        }
+        @include for-tablet {
+          flex-basis: calc((100% - 30px) / 2);
+        }
+        @include for-mobile {
+          width: 100%;
+          // padding: 0 24px;
+        }
+        .cards-card-image {
+          line-height: 0;
+          width: 100%;
+          img {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+          }
+        }
+
+        .cards-card-body {
+          h3 {
+            font-weight: 700;
+            font-family: $--font-roboto;
+            line-height: 24px;
+            font-size: 20px;
+            color: $--blue-675;
+            text-align: center;
+            text-decoration: underline;
+            margin: 0;
+            padding-top: 24px;
+          }
+          p {
+            font-weight: 400;
+            font-family: $--font-roboto;
+            line-height: 24px;
+            font-size: 16px;
+            color: $--gray-700;
+            margin: 0;
+            padding-top: 16px;
+            @include for-mobile {
+              padding-top: 12px;
+            }
+          }
+        }
+      }
+    }
+    > .promo-no-image-3-column {
+      list-style: none;
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      text-align: center;
+      flex-direction: row;
+      margin: 0;
+      @include for-mobile {
+        flex-direction: column;
+        padding: 0;
+        gap: 52px;
+      }
+      @include for-xlarge {
+        gap: 30px;
+        padding: 0;
+        width: calc((100% / 12) * 8);
+        margin: 0 auto;
+      }
+      @include for-large {
+        gap: 30px;
+        padding: 0;
+        width: calc((100% / 12) * 8);
+        margin: 0 auto;
+      }
+      @include for-laptop {
+        gap: 30px;
+        padding: 0;
+      }
+      @include for-tablet {
+        padding: 0;
+        // flex-wrap: wrap;
+        flex-direction: column;
+        gap: 52px;
+      }
+      > li {
+        background-color: var(--background-color);
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        @include for-xlarge {
+          width: calc((100% - 60px) / 3);
+          padding: 0 24px;
+        }
+        @include for-large {
+          width: calc((100% - 60px) / 3);
+          padding: 0 24px;
+        }
+        @include for-laptop {
+          width: calc((100% - 72px) / 3);
+          padding: 0 24px;
+        }
+        @include for-tablet {
+          width: 100%;
+        }
+        .cards-card-image {
+          line-height: 0;
+          width: 100%;
+          img {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+          }
+        }
+
+        .cards-card-body {
+          h3 {
+            font-weight: 700;
+            font-family: $--font-roboto;
+            line-height: 24px;
+            font-size: 20px;
+            color: $--blue-675;
+            text-align: center;
+            text-decoration: underline;
+            margin: 0;
+            padding-top: 24px;
+          }
+          p {
+            font-weight: 400;
+            font-family: $--font-roboto;
+            line-height: 24px;
+            font-size: 16px;
+            color: $--gray-700;
+            margin: 0;
+            padding-top: 16px;
+            @include for-mobile {
+              padding-top: 12px;
+            }
+          }
+        }
+      }
+    }
+    > .promo-no-image-2-column {
+      list-style: none;
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      text-align: center;
+      flex-direction: row;
+      margin: 0;
+      @include for-mobile {
+        flex-direction: column;
+        padding: 0;
+        gap: 52px;
+        // width: 100%;
+      }
+      @include for-xlarge {
+        gap: 30px;
+        padding: 0;
+        // width: 50%;
+        // margin: 0 auto;
+      }
+      @include for-large {
+        gap: 30px;
+        padding: 0;
+        // width: 50%;
+        // margin: 0 auto;
+      }
+      @include for-laptop {
+        gap: 30px;
+        padding: 0;
+        width: 66.66%;
+      }
+      @include for-tablet {
+        padding: 0;
+        gap: 30px;
+        // width: 100%;
+      }
+      > li {
+        background-color: var(--background-color);
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        @include for-xlarge {
+          width: calc((100% / 4) - 69px);
+          padding: 0 24px;
+        }
+        @include for-large {
+          width: calc((100% / 4) - 69px);
+          padding: 0 24px;
+        }
+        @include for-laptop {
+          width: 50%;
+          padding: 0 24px;
+        }
+        @include for-tablet {
+          flex-basis: calc(100% / 2);
+        }
+        @include for-tablet {
+          width: calc((100% - 60px) / 2);
+        }
+        .cards-card-image {
+          line-height: 0;
+          width: 100%;
+          img {
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            object-fit: cover;
+          }
+        }
+
+        .cards-card-body {
+          h3 {
+            font-weight: 700;
+            font-family: $--font-roboto;
+            line-height: 24px;
+            font-size: 20px;
+            color: $--blue-675;
+            text-align: center;
+            text-decoration: underline;
+            margin: 0;
+            padding-top: 24px;
+          }
+          p {
+            font-weight: 400;
+            font-family: $--font-roboto;
+            line-height: 24px;
+            font-size: 16px;
+            color: $--gray-700;
+            margin: 0;
+            padding-top: 16px;
+            @include for-mobile {
+              padding-top: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

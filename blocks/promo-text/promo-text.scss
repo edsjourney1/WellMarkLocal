@@ -1,0 +1,85 @@
+@import "../../styles/include/mq.scss";
+@import "../../styles/include/tokens.scss";
+
+.promo-text-wrapper {
+  margin: 0;
+  > .promo-text {
+    padding: 0 52px;
+    @include for-xlarge {
+      padding: 0 52px;
+    }
+    @include for-large {
+      padding: 0 52px;
+    }
+    @include for-laptop {
+      padding: 0 36px;
+    }
+    @include for-mobile {
+      padding: 0 16px;
+    }
+    @include for-tablet {
+      padding: 0 36px;
+    }
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      padding: 0;
+      @include for-xlarge {
+        padding: 120px 217px;
+      }
+      @include for-large {
+        padding: 120px 217px;
+      }
+      @include for-laptop {
+        padding: 118px 81px 120px 81px;
+      }
+      @include for-mobile {
+        padding: 72px 0;
+      }
+      @include for-tablet {
+        padding: 96px 0;
+      }
+      > .button {
+        margin: 0;
+        border-radius: 2px;
+        @include for-mobile {
+          width: 100%;
+        }
+      }
+      > .description {
+        opacity: 1;
+        color: $--gray-700;
+        font-family: $--font-roboto;
+        font-size: 16px;
+        font-weight: 400;
+        font-style: Regular;
+        letter-spacing: 0px;
+        text-align: center;
+        line-height: 24px;
+        margin: 0;
+        padding-bottom: 36px;
+        @include for-mobile {
+          padding-bottom: 24px;
+        }
+      }
+
+      > .title {
+        opacity: 1;
+        color: $--blue-550;
+        font-family: $--font-museo;
+        font-size: 32px;
+        font-weight: 600;
+        letter-spacing: 0px;
+        text-align: center;
+        padding-bottom: 24px;
+        margin: 0;
+        @include for-mobile {
+          padding-bottom: 16px;
+        }
+      }
+    }
+  }
+}

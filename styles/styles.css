@@ -9,6 +9,194 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
+/* wellmark color start */
+/* wellmark color end */
+/* wellmark spacing size start */
+/* wellmark spacing size start */
+/* buttons */
+.button-container {
+  display: flex;
+}
+
+a.button,
+button {
+  box-sizing: border-box;
+  max-width: 100%;
+  border-radius: 2px;
+  font-family: roboto, sans-serif;
+  color: #005589;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  padding: 12px 36px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  opacity: 1;
+  font-style: normal;
+  letter-spacing: -0.18px;
+  line-height: 28px;
+}
+a.button.primary,
+button.primary {
+  background-color: #005589;
+  color: #ffffff;
+  padding: 12px 36px;
+  text-decoration: none;
+}
+a.button.primary:hover,
+button.primary:hover {
+  background-color: #0f3659;
+  color: #ffffff;
+}
+a.button.primary:focus,
+button.primary:focus {
+  background-color: #0f3659;
+  color: #ffffff;
+  outline: 3px solid #e45f0c;
+  outline-style: dashed;
+  outline-offset: 2px;
+}
+a.button.secondary,
+button.secondary {
+  background-color: #ffffff;
+  border: 2px solid #005589;
+  color: #005589;
+  padding: 10px 34px;
+  text-decoration: none;
+}
+a.button.secondary:hover,
+button.secondary:hover {
+  background-color: #f3f9ff;
+  border: 2px solid #0F3659;
+  color: #0F3659;
+}
+a.button.secondary:focus,
+button.secondary:focus {
+  background-color: #f3f9ff;
+  border: 2px solid #0F3659;
+  color: #0F3659;
+  outline: 3px solid #e45f0c;
+  outline-style: dashed;
+  outline-offset: 2px;
+}
+
+.blue-550 .button-container .button.primary {
+  background-color: #ffffff;
+  color: #005589;
+}
+.blue-550 .button-container .button.primary:hover {
+  color: #0f3659;
+}
+.blue-550 .button-container .button.primary:focus {
+  color: #0f3659;
+  outline: 3px solid #ffffff;
+  outline-style: dashed;
+  outline-offset: 2px;
+}
+.blue-550 .button-container .button.secondary {
+  background: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+.blue-550 .button-container .button.secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1882352941);
+}
+.blue-550 .button-container .button.secondary:focus {
+  background-color: rgba(255, 255, 255, 0.1882352941);
+  outline: 3px solid #ffffff;
+  outline-style: dashed;
+  outline-offset: 2px;
+}
+
+/* wellmark color start */
+/* wellmark color end */
+/* wellmark spacing size start */
+/* wellmark spacing size start */
+/* wellmark color start */
+/* wellmark color end */
+/* wellmark spacing size start */
+/* wellmark spacing size start */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #4b4c4d;
+  opacity: 1;
+  text-align: left;
+  letter-spacing: 0px;
+}
+
+h1,
+h2 {
+  font-family: museo, sans-serif;
+  font-weight: 700;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: roboto, sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 33px;
+}
+@media (min-width: 480.5px) {
+  h1 {
+    font-size: 40px;
+    line-height: 47px;
+  }
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 28px;
+}
+@media (min-width: 480.5px) {
+  h2 {
+    font-size: 32px;
+    line-height: 31px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 21px;
+}
+
+body {
+  display: none;
+  margin: 0;
+  font-family: roboto, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+/* links */
+a:any-link {
+  color: #005589;
+  text-decoration: underline;
+  word-break: break-word;
+  padding: 0;
+}
+
+.background-blue-50 {
+  background-color: #f3f9ff;
+}
 
 :root {
   /* colors */
@@ -18,16 +206,10 @@
   --text-color: #131313;
   --link-color: #3b63fb;
   --link-hover-color: #1d3ecf;
-
-  /* fonts */
-  --body-font-family: roboto, roboto-fallback, sans-serif;
-  --heading-font-family: roboto-condensed, roboto-condensed-fallback, sans-serif;
-
   /* body sizes */
   --body-font-size-m: 22px;
   --body-font-size-s: 19px;
   --body-font-size-xs: 17px;
-
   /* heading sizes */
   --heading-font-size-xxl: 55px;
   --heading-font-size-xl: 44px;
@@ -35,22 +217,9 @@
   --heading-font-size-m: 27px;
   --heading-font-size-s: 24px;
   --heading-font-size-xs: 22px;
-
-  /* nav height */
+  /* nav heights */
   --nav-height: 64px;
-}
-
-/* fallback fonts */
-@font-face {
-  font-family: roboto-condensed-fallback;
-  size-adjust: 88.82%;
-  src: local('Arial');
-}
-
-@font-face {
-  font-family: roboto-fallback;
-  size-adjust: 99.529%;
-  src: local('Arial');
+  --breadcrumbs-height: 34px;
 }
 
 @media (width >= 900px) {
@@ -59,7 +228,6 @@
     --body-font-size-m: 18px;
     --body-font-size-s: 16px;
     --body-font-size-xs: 14px;
-
     /* heading sizes */
     --heading-font-size-xxl: 45px;
     --heading-font-size-xl: 36px;
@@ -69,23 +237,32 @@
     --heading-font-size-xs: 18px;
   }
 }
-
-body {
-  display: none;
-  margin: 0;
-  background-color: var(--background-color);
-  color: var(--text-color);
-  font-family: var(--body-font-family);
-  font-size: var(--body-font-size-m);
-  line-height: 1.6;
-}
-
 body.appear {
   display: block;
 }
 
-header {
-  height: var(--nav-height);
+header.megamenu-wrapper {
+  height: 60px;
+}
+@media (min-width: 480.5px) and (max-width: 1023.5px) {
+  header.megamenu-wrapper {
+    height: 60px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  header.megamenu-wrapper {
+    height: 60px;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1379px) {
+  header.megamenu-wrapper {
+    height: 161px;
+  }
+}
+@media (min-width: 1380px) {
+  header.megamenu-wrapper {
+    height: 161px;
+  }
 }
 
 header .header,
@@ -93,32 +270,16 @@ footer .footer {
   visibility: hidden;
 }
 
-header .header[data-block-status="loaded"],
-footer .footer[data-block-status="loaded"] {
+header .header[data-block-status=loaded],
+footer .footer[data-block-status=loaded] {
   visibility: visible;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0.8em;
-  margin-bottom: 0.25em;
-  font-family: var(--heading-font-family);
-  font-weight: 600;
-  line-height: 1.25;
-  scroll-margin: 40px;
+@media (width >= 900px) {
+  body[data-breadcrumbs] {
+    --header-height: calc(var(--nav-height) + var(--breadcrumbs-height));
+  }
 }
-
-h1 { font-size: var(--heading-font-size-xxl); }
-h2 { font-size: var(--heading-font-size-xl); }
-h3 { font-size: var(--heading-font-size-l); }
-h4 { font-size: var(--heading-font-size-m); }
-h5 { font-size: var(--heading-font-size-s); }
-h6 { font-size: var(--heading-font-size-xs); }
-
 p,
 dl,
 ol,
@@ -153,61 +314,11 @@ button {
   font: inherit;
 }
 
-/* links */
-a:any-link {
-  color: var(--link-color);
-  text-decoration: none;
-  word-break: break-word;
-}
-
-a:hover {
-  color: var(--link-hover-color);
-  text-decoration: underline;
-}
-
 /* buttons */
-a.button:any-link,
-button {
-  box-sizing: border-box;
-  display: inline-block;
-  max-width: 100%;
-  margin: 12px 0;
-  border: 2px solid transparent;
-  border-radius: 2.4em;
-  padding: 0.5em 1.2em;
-  font-family: var(--body-font-family);
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.25;
-  text-align: center;
-  text-decoration: none;
-  background-color: var(--link-color);
-  color: var(--background-color);
-  cursor: pointer;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-
-a.button:hover,
-a.button:focus,
-button:hover,
-button:focus {
-  background-color: var(--link-hover-color);
-  cursor: pointer;
-}
-
 button:disabled,
 button:disabled:hover {
   background-color: var(--light-color);
   cursor: unset;
-}
-
-a.button.secondary,
-button.secondary {
-  background-color: unset;
-  border: 2px solid currentcolor;
-  color: var(--text-color);
 }
 
 main img {
@@ -229,23 +340,14 @@ main img {
 
 /* sections */
 main > .section {
-  margin: 40px 0;
+  margin: 0;
 }
-
 main > .section > div {
-  max-width: 1200px;
+  max-width: 1275px;
   margin: auto;
-  padding: 0 24px;
 }
-
-main > .section:first-of-type {
-  margin-top: 0;
-}
-
-@media (width >= 900px) {
-  main > .section > div {
-    padding: 0 32px;
-  }
+main > .section > div.promo-image-wrapper {
+  max-width: 1920px;
 }
 
 /* section metadata */

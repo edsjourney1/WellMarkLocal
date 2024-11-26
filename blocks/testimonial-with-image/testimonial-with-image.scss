@@ -1,0 +1,200 @@
+@import "../../styles/include/mq.scss";
+@import "../../styles/include/tokens.scss";
+.section.testimonial-with-image-container{
+  font-family: $--font-roboto;
+  .testimonial-with-image-wrapper{
+    padding: $--spacing-max $--spacing-xxl;
+    text-align: center;
+    @include for-tablet{
+      padding: $--spacing-jumbo $--spacing-xl;
+    }
+    @include for-mobile{
+      padding: $--spacing-huge $--spacing-m;
+    }
+    @include for-laptop{
+      padding: $--spacing-max $--spacing-xl;
+    }
+    h2{
+      font-family: $--font-museo;
+      font-size: 32px;
+      line-height: 38px;
+      font-weight: 700;
+      color: $--blue-550;
+      margin: 0;
+      margin-bottom: $--spacing-huge;
+      text-align: center;
+      @include for-tablet{
+        margin-bottom: $--spacing-xxl;
+      }
+      @include for-mobile{
+        margin-bottom: $--spacing-xl;
+      }
+    }
+    .testimonial-link{
+      font-size: $--spacing-m;
+      line-height: 22px;
+      font-weight: 500;
+      color: $--primary-675;
+      @include for-tablet{
+        margin-top: $--spacing-m;
+      }
+      @include for-mobile{
+        margin-top: $--spacing-s;
+      }
+    }
+    .link-img{
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .testimonial-with-image{
+      ul{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding-left: 0;
+        @include for-tablet{
+          flex-direction: column;
+          align-items: center;
+        }
+        @include for-mobile{
+          flex-direction: column;
+        }
+        li{
+          list-style-type: none;
+          text-align: left;
+          color: $--gray-700;
+          display: flex;
+          gap: 36px;
+          align-items: center;
+          @include for-tablet{
+            flex-direction: column-reverse;
+          }
+          @include for-mobile{
+            flex-direction: column-reverse;
+            gap: 24px;
+          }
+          .testimonial-title{
+            font-family: $--font-museo;
+            font-size: 32px;
+            line-height: 38px;
+            font-weight: 700;
+            margin: $--spacing-xl 0 $--spacing-l 0;
+          }
+          .testimonial-description{
+            font-size: $--spacing-m;
+            line-height: $--spacing-l;
+            font-weight: 400;
+          }
+          div{
+            &:first-child{
+              width: 30%;
+              padding: 0 $--spacing-xl;
+              @include for-laptop{
+                width: 50%;
+              }
+              @include for-tablet{
+                width: 100%;
+                padding: $--spacing-xl $--spacing-xl $--spacing-jumbo $--spacing-xl;
+              }
+              @include for-mobile{
+                width: 100%;
+                padding: $--spacing-xl 0 $--spacing-jumbo 0;
+              }
+              h3{
+                &:first-child{
+                  margin: 0;
+                }
+              }
+            }
+            &:last-child{
+              width: 70%;
+              @include for-laptop{
+                width: 50%;
+              }
+              @include for-tablet{
+                width: 100%;
+                margin: 0;
+              }
+              @include for-mobile{
+                width: 100%;
+                margin: 0;
+              }
+            }
+          }
+          picture{
+            img{
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    div{
+      &:last-child{
+        margin-top: $--spacing-huge;
+        @include for-tablet{
+          margin: $--spacing-xxl 0 $--spacing-jumbo 0;
+        }
+        @include for-mobile{
+          margin-top: $--spacing-xl;
+        }
+      }
+    }
+  }
+}
+.testimonial-small-image{
+  .testimonial-with-image-wrapper{
+    .testimonial-with-image{
+      ul{
+        li{
+          @include for-laptop{
+            flex-direction: row-reverse;
+            align-items: flex-start !important;
+          }
+          @include for-tablet{
+            flex-direction: column-reverse;
+          }
+          @include for-mobile{
+            flex-direction: column-reverse;
+          }
+          div{
+            &:first-child{
+              width: 70% !important;
+              @include for-laptop{
+                width: 50% !important;
+                padding: $--spacing-xl $--spacing-xl $--spacing-jumbo $--spacing-xl !important;
+              }
+              @include for-laptop{
+                width: 100%;
+              }
+              @include for-mobile{
+                width: 100% !important;
+              }
+              @include for-tablet{
+                width: 100% !important;
+              }
+            }
+            &:last-child{
+              width: 30% !important;
+              margin: 0;
+              @include for-laptop{
+                width: 50% !important;
+              }
+              @include for-tablet{
+                width: 100% !important;
+              }
+              @include for-mobile{
+                width: 100% !important;
+              }
+            }
+          }
+        }
+      }
+    }
+    div{
+      &:last-child{
+        margin-bottom: 0 !important;
+      }
+    }
+  }
+}

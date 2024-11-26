@@ -1,0 +1,62 @@
+/* wellmark color start */
+/* wellmark color end */
+/* wellmark spacing size start */
+/* wellmark spacing size start */
+.title-banner-condensed-container {
+  background: linear-gradient(270deg, rgb(166, 198, 221) 0%, rgb(73, 115, 144) 50%);
+}
+.title-banner-condensed-container .title-banner-condensed-wrapper .title-banner-condensed.columns-1-cols {
+  width: 840px;
+  padding: 72px 0 52px 0;
+}
+@media (min-width: 480.5px) and (max-width: 1023.5px) {
+  .title-banner-condensed-container .title-banner-condensed-wrapper .title-banner-condensed.columns-1-cols {
+    padding: 72px 0 72px 36px;
+    width: 80%;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .title-banner-condensed-container .title-banner-condensed-wrapper .title-banner-condensed.columns-1-cols {
+    padding: 72px 0 72px 36px;
+  }
+}
+@media (max-width: 480px) {
+  .title-banner-condensed-container .title-banner-condensed-wrapper .title-banner-condensed.columns-1-cols {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .title-banner-condensed-container .title-banner-condensed-wrapper .title-banner-condensed.columns-1-cols div div {
+    padding: 0 16px;
+  }
+}
+.title-banner-condensed-container .title-banner-condensed-wrapper .title-banner-condensed.columns-1-cols div div h2 {
+  color: #ffffff;
+  font-family: museo, sans-serif;
+  font-size: 60px;
+  line-height: 66px;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+@media (max-width: 480px) {
+  .title-banner-condensed-container .title-banner-condensed-wrapper .title-banner-condensed.columns-1-cols div div h2 {
+    margin-bottom: 12px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+@media (min-width: 480.5px) and (max-width: 1023.5px) {
+  .title-banner-condensed-container .title-banner-condensed-wrapper .title-banner-condensed.columns-1-cols div div h2 {
+    margin-bottom: 12px;
+  }
+}
+.title-banner-condensed-container .title-banner-condensed-wrapper .title-banner-condensed.columns-1-cols div div p {
+  color: #ffffff;
+  font-family: roboto, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+}

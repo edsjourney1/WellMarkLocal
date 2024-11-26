@@ -1,0 +1,164 @@
+@import '../../styles/include/mq.scss';
+@import '../../styles/include/tokens.scss';
+
+.title-banner-container {
+  background: linear-gradient(270deg, rgba(166, 198, 221, 1) 0%, rgba(73, 115, 144, 1) 50%);
+  .title-banner-wrapper {
+    .title-banner {
+      &.block {
+        &.columns-2-cols {
+          padding: 50px $--spacing-xxl;
+          @include for-tablet {
+            padding: $--spacing-huge $--spacing-xl;
+          }
+          @include for-laptop {
+            padding: $--spacing-jumbo $--spacing-xl;
+          }
+          @include for-mobile{
+            padding: $--spacing-xxl $--spacing-m;
+          }
+          >div {
+            display: flex;
+            flex-direction: column;
+            @include for-nonmobile {
+              align-items: center;
+              flex-direction: row;
+            }
+            @include for-tablet {
+              gap: 30px;
+            }
+            @include for-laptop {
+              gap: $--spacing-huge;
+            }
+            @include for-large {
+              gap: $--spacing-jumbo;
+            }
+            @include for-xlarge {
+              gap: $--spacing-jumbo;
+            }
+            >div {
+              order: 1;
+              display: flex;
+              flex-flow: row wrap;
+              @include for-nonmobile {
+                flex: 1;
+                order: unset;
+                text-align: left;
+                column-gap: 12px;
+              }
+              @include for-tablet{
+                max-width: 90%;
+              }
+            }
+            >.columns-img-col {
+              order: 0;
+              align-self: flex-start;
+              @include for-tablet{
+                display: none;
+              }
+              @include for-mobile{
+                display: none;
+              }
+            }
+            >.columns-col img {
+              display: block;
+            }
+          }
+          img {
+            width: 100%;
+            display: flex;
+          }
+          &.block {
+            h2 {
+              color: $--white;
+              font-family: $--font-museo;
+              font-size: 60px;
+              line-height: 66px;
+              font-weight: 700;
+              margin-top: 0;
+              margin-bottom: $--spacing-l;
+              @include for-tablet {
+                font-size: 60px;
+                line-height: 66px;
+              }
+              @include for-mobile {
+                margin-bottom: $--spacing-m;
+                font-size: 40px;
+                line-height: 48px;
+              }
+              @include for-laptop{
+                margin-bottom: $--spacing-xs;
+              }
+            }
+            p {
+              color: $--white;
+              font-family: $--font-museo;
+              font-size: 60px;
+              line-height: 66px;
+              font-weight: 300;
+              font-style: normal;
+              margin-bottom: $--spacing-l;
+              margin-top: 0;
+              &.button-container {
+                margin-top: 0;
+                margin-bottom: 0;
+                a.button {
+                  &.primary {
+                    margin-bottom: $--spacing-m;
+                  }
+                }
+                @include for-mobile {
+                  width: 100%;
+                  display: unset;
+                }
+              }
+              @include for-mobile{
+                font-size: 40px;
+                line-height: 48px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.one-btn-banner.title-banner-container.blue-550{
+  .title-banner-wrapper{
+    .block.columns-2-cols{
+      div{
+        @include for-laptop{
+          gap: 30px;
+        }
+        div{
+          @include for-laptop{
+            gap: unset;
+          }
+          h2{
+            @include for-laptop{
+              margin-bottom: $--spacing-m;
+            }
+          }
+          p:nth-child(2){
+            width: 100%;
+            font-family: $--font-roboto;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            @include for-laptop{
+              margin-bottom: $--spacing-xl;
+            }
+            @include for-mobile{
+              margin-bottom: $--spacing-xl;
+            }
+          }
+          p.button-container{
+            @include for-mobile{
+              width: unset;
+            }
+          }
+        }
+      }
+    }
+  }
+}

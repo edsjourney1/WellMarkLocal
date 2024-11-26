@@ -1,0 +1,113 @@
+@import '../../styles/include/mq.scss';
+@import '../../styles/include/tokens.scss';
+
+.image-text-container {
+  .image-text-wrapper {
+    .image-text {
+      &.block {
+        &.columns-2-cols {
+          padding: $--spacing-huge $--spacing-m;
+          @include for-tablet {
+            padding: $--spacing-jumbo $--spacing-xl;
+          }
+          @include for-laptop {
+            padding: $--spacing-max $--spacing-xl;
+          }
+          @include for-large {
+            padding: $--spacing-max $--spacing-xxl;
+          }
+          @include for-xlarge {
+            padding: $--spacing-max 0;
+          }
+          >div {
+            display: flex;
+            flex-direction: column;
+            @include for-nonmobile {
+              align-items: center;
+              flex-direction: row;
+            }
+            @include for-tablet {
+              gap: 30px;
+            }
+            @include for-laptop {
+              gap: $--spacing-huge;
+            }
+            @include for-large {
+              gap: $--spacing-jumbo;
+            }
+            @include for-xlarge {
+              gap: $--spacing-jumbo;
+            }
+            >div {
+              order: 1;
+              display: flex;
+              flex-flow: row wrap;
+              @include for-nonmobile {
+                flex: 1;
+                order: unset;
+                text-align: left;
+                column-gap: 24px;
+              }
+            }
+            >.columns-img-col {
+              order: 0;
+              align-self: flex-start;
+            }
+            >.columns-col img {
+              display: block;
+            }
+          }
+          img {
+            width: 100%;
+            display: flex;
+          }
+          &.block {
+            h2 {
+              color: $--blue-550;
+              width: 100%;
+              font-family: $--font-museo;
+              font-weight: 700;
+              opacity: 1;
+              text-align: left;
+              margin-top: 0;
+              margin-bottom: $--spacing-l;
+              @include for-tablet {
+                font-size: 28px;
+                line-height: 28px;
+              }
+              @include for-mobile {
+                margin-top: $--spacing-xl;
+                margin-bottom: $--spacing-m;
+              }
+            }
+            p {
+              color: $--gray-700;
+              font-family: $--font-roboto;
+              font-size: 16px;
+              font-weight: 400;
+              font-style: normal;
+              letter-spacing: 0px;
+              text-align: left;
+              line-height: 24px;
+              margin-bottom: $--spacing-xl;
+              margin-top: 0;
+              &.button-container {
+                margin-top: 0;
+                margin-bottom: 0;
+                a.button {
+                  &.primary {
+                    margin-bottom: $--spacing-m;
+                  }
+                }
+                @include for-mobile {
+                  width: 100%;
+                  display: unset;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

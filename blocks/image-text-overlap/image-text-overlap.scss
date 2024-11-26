@@ -1,0 +1,130 @@
+@import '../../styles/include/mq.scss';
+@import '../../styles/include/tokens.scss';
+
+.image-text-overlap-container {
+  .image-text-overlap-wrapper {
+    padding: 0;
+    .image-text-overlap {
+      &.block {
+        &.columns-2-cols {
+          >div {
+            display: flex;
+            flex-direction: column;
+            @include for-nonmobile {
+              align-items: center;
+              flex-direction: row;
+              gap: 30px;
+            }
+            >div:has(h2) {
+              order: 1;
+              position: relative;
+              @include for-mobile {
+                padding: 0 $--spacing-m $--spacing-huge $--spacing-m;
+              }
+              @include for-tablet {
+                padding: $--spacing-huge 0 $--spacing-huge $--spacing-xl;
+              }
+              @include for-laptop {
+                padding: $--spacing-huge 0 $--spacing-huge $--spacing-xl;
+              }
+              @include for-large {
+                padding: $--spacing-max 0 $--spacing-max $--spacing-xxl;
+              }
+              @include for-xlarge {
+                padding: $--spacing-max 0 $--spacing-max 0;
+              }
+              @include for-nonmobile {
+                flex: 1;
+                order: unset;
+                display: flex;
+                flex-flow: row wrap;
+                text-align: left;
+                column-gap: 24px;
+                width: 50%;
+              }
+            }
+            >.columns-img-col {
+              order: 0;
+              width: 50%;
+              @include for-mobile {
+                padding: 0;
+                width: 100%;
+              }
+              @include for-tablet {
+                padding: 0 $--spacing-xl 0 0;
+              }
+              @include for-laptop {
+                padding: 0 $--spacing-xl 0 0;
+              }
+              @include for-large {
+                padding: 0 $--spacing-xxl 0 0;
+              }
+            }
+            >.columns-col img {
+              display: block;
+            }
+          }
+          img {
+            width: 100%;
+            display: flex;
+            @include for-laptop {
+              margin: -27px 0 -28px 0;
+              height: revert-layer;
+            }
+            @include for-large {
+              margin: -68px 0 -70px 0;
+              height: revert-layer;
+            }
+            @include for-xlarge {
+              margin: -68px 0 -70px 0;
+              height: revert-layer;
+            }
+          }
+          &.block {
+            h2 {
+              color: $--blue-550;
+              width: 100%;
+              font-family: $--font-museo;
+              font-size: 32px;
+              font-weight: 700;
+              opacity: 1;
+              letter-spacing: 0px;
+              text-align: left;
+              margin-top: 0;
+              margin-bottom: $--spacing-l;
+              @include for-mobile {
+                margin-top: $--spacing-xxl;
+                margin-bottom: $--spacing-l;
+              }
+            }
+            p {
+              color: $--gray-700;
+              font-family: $--font-roboto;
+              font-size: 16px;
+              font-weight: 400;
+              font-style: normal;
+              letter-spacing: 0px;
+              text-align: left;
+              line-height: 24px;
+              margin-bottom: $--spacing-xl;
+              margin-top: 0;
+              &.button-container {
+                margin-top: 0;
+                margin-bottom: 0;
+                a.button {
+                  &.primary {
+                    margin-bottom: 16px;
+                  }
+                }
+                @include for-mobile {
+                  width: 100%;
+                  display: unset;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

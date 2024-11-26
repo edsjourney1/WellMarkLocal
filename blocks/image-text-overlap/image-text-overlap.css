@@ -1,0 +1,151 @@
+/* wellmark color start */
+/* wellmark color end */
+/* wellmark spacing size start */
+/* wellmark spacing size start */
+.image-text-overlap-container .image-text-overlap-wrapper {
+  padding: 0;
+}
+.image-text-overlap-container .image-text-overlap-wrapper .image-text-overlap.block.columns-2-cols > div {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 480.5px) {
+  .image-text-overlap-container .image-text-overlap-wrapper .image-text-overlap.block.columns-2-cols > div {
+    align-items: center;
+    flex-direction: row;
+    gap: 30px;
+  }
+}
+.image-text-overlap-container .image-text-overlap-wrapper .image-text-overlap.block.columns-2-cols > div > div:has(h2) {
+  order: 1;
+  position: relative;
+}
+@media (max-width: 480px) {
+  .image-text-overlap-container .image-text-overlap-wrapper .image-text-overlap.block.columns-2-cols > div > div:has(h2) {
+    padding: 0 16px 72px 16px;
+  }
+}
+@media (min-width: 480.5px) and (max-width: 1023.5px) {
+  .image-text-overlap-container .image-text-overlap-wrapper .image-text-overlap.block.columns-2-cols > div > div:has(h2) {
+    padding: 72px 0 72px 36px;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .image-text-overlap-container .image-text-overlap-wrapper .image-text-overlap.block.columns-2-cols > div > div:has(h2) {
+    padding: 72px 0 72px 36px;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1379px) {
+  .image-text-overlap-container .image-text-overlap-wrapper .image-text-overlap.block.columns-2-cols > div > div:has(h2) {
+    padding: 120px 0 120px 52px;
+  }
+}
+@media (min-width: 1380px) {
+  .image-text-overlap-container .image-text-overlap-wrapper .image-text-overlap.block.columns-2-cols > div > div:has(h2) {
+    padding: 120px 0 120px 0;
+  }
+}
+@media (min-width: 480.5px) {
+  .image-text-overlap-container .image-text-overlap-wrapper .image-text-overlap.block.columns-2-cols > div > div:has(h2) {
+    flex: 1;
+    order: unset;
+    display: flex;
+    flex-flow: row wrap;
+    text-align: left;
+    column-gap: 24px;
+    width: 50%;
+  }
+}
+.image-text-overlap-container .image-text-overlap-wrapper .image-text-overlap.block.columns-2-cols > div > .columns-img-col {
+  order: 0;
+  width: 50%;
+}
+@media (max-width: 480px) {
+  .image-text-overlap-container .image-text-overlap-wrapper .image-text-overlap.block.columns-2-cols > div > .columns-img-col {
+    padding: 0;
+    width: 100%;
+  }
+}
+@media (min-width: 480.5px) and (max-width: 1023.5px) {
+  .image-text-overlap-container .image-text-overlap-wrapper .image-text-overlap.block.columns-2-cols > div > .columns-img-col {
+    padding: 0 36px 0 0;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .image-text-overlap-container .image-text-overlap-wrapper .image-text-overlap.block.columns-2-cols > div > .columns-img-col {
+    padding: 0 36px 0 0;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1379px) {
+  .image-text-overlap-container .image-text-overlap-wrapper .image-text-overlap.block.columns-2-cols > div > .columns-img-col {
+    padding: 0 52px 0 0;
+  }
+}
+.image-text-overlap-container .image-text-overlap-wrapper .image-text-overlap.block.columns-2-cols > div > .columns-col img {
+  display: block;
+}
+.image-text-overlap-container .image-text-overlap-wrapper .image-text-overlap.block.columns-2-cols img {
+  width: 100%;
+  display: flex;
+}
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .image-text-overlap-container .image-text-overlap-wrapper .image-text-overlap.block.columns-2-cols img {
+    margin: -27px 0 -28px 0;
+    height: revert-layer;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1379px) {
+  .image-text-overlap-container .image-text-overlap-wrapper .image-text-overlap.block.columns-2-cols img {
+    margin: -68px 0 -70px 0;
+    height: revert-layer;
+  }
+}
+@media (min-width: 1380px) {
+  .image-text-overlap-container .image-text-overlap-wrapper .image-text-overlap.block.columns-2-cols img {
+    margin: -68px 0 -70px 0;
+    height: revert-layer;
+  }
+}
+.image-text-overlap-container .image-text-overlap-wrapper .image-text-overlap.block.columns-2-cols.block h2 {
+  color: #4a7390;
+  width: 100%;
+  font-family: museo, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  opacity: 1;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+@media (max-width: 480px) {
+  .image-text-overlap-container .image-text-overlap-wrapper .image-text-overlap.block.columns-2-cols.block h2 {
+    margin-top: 52px;
+    margin-bottom: 24px;
+  }
+}
+.image-text-overlap-container .image-text-overlap-wrapper .image-text-overlap.block.columns-2-cols.block p {
+  color: #4b4c4d;
+  font-family: roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0px;
+  text-align: left;
+  line-height: 24px;
+  margin-bottom: 36px;
+  margin-top: 0;
+}
+.image-text-overlap-container .image-text-overlap-wrapper .image-text-overlap.block.columns-2-cols.block p.button-container {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.image-text-overlap-container .image-text-overlap-wrapper .image-text-overlap.block.columns-2-cols.block p.button-container a.button.primary {
+  margin-bottom: 16px;
+}
+@media (max-width: 480px) {
+  .image-text-overlap-container .image-text-overlap-wrapper .image-text-overlap.block.columns-2-cols.block p.button-container {
+    width: 100%;
+    display: unset;
+  }
+}
